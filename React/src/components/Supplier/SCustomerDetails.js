@@ -17,7 +17,7 @@ const SCustomerDetails = () => {
     }
 
     useEffect(() => {
-        document.title = "Wish-it || Completed"
+        document.title = "HomeEase || Completed"
         Connection.getOrderDetails(id).then((response)=> {
             SetOrder(response.data.order)
             SetCustomer(response.data.customer)

@@ -54,7 +54,7 @@ export const SupplierNav=()=>{
         <div className="container-fluid">
           <Navbar.Brand href="#home" >
           
-          <Link to={`/s/sdashboard`}><img src={logo} alt=""/></Link><b>WISH-IT</b>
+          <Link to={`/s/sdashboard`}><img src={logo} alt=""/></Link><b>HomeEase</b>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
               <span className="navbar-toggler-icon"></span>

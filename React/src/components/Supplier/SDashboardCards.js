@@ -4,7 +4,7 @@ const SDashboardCards = () => {
     const [supplier,setSupplier] = useState([])
     const [user,setUser] = useState([])
     useEffect(() => {
-        document.title = "Wish-it || Dashboard"
+        document.title = "HomeEase || Dashboard"
        
         Connection.getSupplierDashboard().then((response)=>{
             

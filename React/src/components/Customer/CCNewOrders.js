@@ -20,7 +20,7 @@ const CCNewOrders=()=> {
     }
 
     useEffect(() => {
-        document.title = "Wish-it || New Order"
+        document.title = "HomeEase || New Order"
         const user={}
         CustConnection.getOrderDetails(id).then((response)=> {
             SetOrder(response.data.order)

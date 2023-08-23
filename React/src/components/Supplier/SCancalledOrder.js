@@ -5,7 +5,7 @@ const SCancalledOrder = () => {
     const { id } =useParams()
     const[order,SetOrder]=useState('')
     useEffect(() => {
-        document.title = "Wish-it || Cancelled"
+        document.title = "HomeEase || Cancelled"
         Connection.getOrder(id).then((response)=> {
             SetOrder(response.data.order)
            

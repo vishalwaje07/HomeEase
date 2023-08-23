@@ -86,7 +86,7 @@ return (
         <Container>
             <Row>
                 <Col>
-                <h2>Wish-IT Services</h2>
+                <h2>HomeEase Services</h2>
                 <p>These all Services are available at Your Door</p>
                 <Tab.Container id="project-tabs" defaultActiveKey="first">
                 <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">

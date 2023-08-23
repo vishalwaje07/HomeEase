@@ -5,7 +5,7 @@ const ADashBoardCards = () => {
     const [admin,setAdmin] = useState([])
     const [user,setUser] = useState([])
     useEffect(() => {
-        document.title = "Wish-it || Dashboard"
+        document.title = "HomeEase || Dashboard"
        
         Connection.getAdminDashboard().then((response)=>{
            

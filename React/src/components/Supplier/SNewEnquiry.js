@@ -30,7 +30,7 @@ const SNewEnquiry=()=> {
     }
 
     useEffect(() => {
-        document.title = "Wish-it || New Enquiry"
+        document.title = "HomeEase || New Enquiry"
         Connection.getOrder(id).then((response)=> {
             SetOrder(response.data.order)
            

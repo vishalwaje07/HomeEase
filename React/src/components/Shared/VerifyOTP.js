@@ -7,7 +7,7 @@ const VerifyOTP = () => {
   const id =0
   const [otp, SetOtp] = useState('')
   useEffect(() => {
-    document.title = "Wish-it || Verify OTP"
+    document.title = "HomeEase || Verify OTP"
     
 },[])
   // var [token,setToken]=useState(sessionStorage.getItem("JwtToken"))

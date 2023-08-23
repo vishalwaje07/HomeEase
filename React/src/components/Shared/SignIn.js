@@ -24,7 +24,7 @@ const validate = (cdata) => {
 
 function SignIn() {
   useEffect(() => {
-    document.title = "Wish-it || SignIn"
+    document.title = "HomeEase || SignIn"
   })
 function ForgotPassword(e){
   

@@ -8,7 +8,7 @@ const AdminProfile = () => {
    
     const [dob,setDOB] = useState([])
     useEffect(() => {
-        document.title = "Wish-it || Profile"
+        document.title = "HomeEase || Profile"
        
         Connection.getAdminProfile().then((response)=>{
             console.log(response.data)

@@ -12,7 +12,7 @@ const SCompletedOrder = () => {
         navigate('/s/supplierorders')
     }
     useEffect(() => {
-        document.title = "Wish-it || Completed"
+        document.title = "HomeEase || Completed"
         Connection.getOrder(id).then((response)=> {
             SetOrder(response.data.order)
            

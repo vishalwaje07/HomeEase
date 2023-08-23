@@ -10,7 +10,7 @@ const COrderDettails = () => {
     const[UseOtp,SetUseOtp]=useState('')
 
     useEffect(() => {
-        document.title = "Wish-it || Order Details"
+        document.title = "HomeEase || Order Details"
         CustConnection.getSupplierDetails(id).then((response)=> {
             // SetOrder(response.data.order)
             SetSupplier(response.data.supplier)

@@ -8,7 +8,7 @@ const SDashboardCards = () => {
     const [service,setService] = useState([])
     const [dob,setDOB] = useState([])
     useEffect(() => {
-        document.title = "Wish-it || Dashboard"
+        document.title = "HomeEase || Dashboard"
        
         Connection.getSupplierProfile().then((response)=>{
             console.log(response.data)

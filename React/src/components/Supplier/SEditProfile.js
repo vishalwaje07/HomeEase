@@ -14,7 +14,7 @@ const SEditProfile = (supplier) => {
     
 
     useEffect(() => {
-        document.title = "Wish-it || Edit Profile"
+        document.title = "HomeEase || Edit Profile"
         Connection.getSupplierProfile().then((response)=>{
             console.log(response.data)
             setNames(response.data.user.name)

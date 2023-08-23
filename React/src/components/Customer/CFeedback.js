@@ -17,7 +17,7 @@ const validate = (supData) => {
 function CFeedback() {
     const{id} =useParams()
     useEffect(() => {
-        document.title = "Wish-it || Feedback"
+        document.title = "HomeEase || Feedback"
     }, [])
    
 

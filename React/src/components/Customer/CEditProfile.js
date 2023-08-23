@@ -11,7 +11,7 @@ const CEditProfile = (supplier) => {
     const [mobile,setMobile] = useState()
 
     useEffect(() => {
-        document.title = "Wish-it || Edit Profile"
+        document.title = "HomeEase || Edit Profile"
         CustConnection.getOrder().then((response)=>{
             console.log(response.data)
             setNames(response.data.user.name)

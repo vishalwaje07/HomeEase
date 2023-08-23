@@ -55,7 +55,7 @@ export const AdminNav=({click})=>{
         <Navbar expand="lg" className={scrolled?"scolled":"" }>
         <div className="container-fluid">
           <Navbar.Brand href="#home" >
-          <Link to={`/a/adashboard`}><img src={logo} alt=""/></Link><b>WISH-IT</b>
+          <Link to={`/a/adashboard`}><img src={logo} alt=""/></Link><b>HomeEase</b>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
               <span className="navbar-toggler-icon"></span>

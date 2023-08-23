@@ -9,7 +9,7 @@ const ChangePassword = () => {
   const [password, SetConfirmPassword] = useState('')
 
   useEffect(() => {
-    document.title = "Wish-it || Change Password"
+    document.title = "HomeEase || Change Password"
     
 },[])
 const SetNewPass=(e)=>{

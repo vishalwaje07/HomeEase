@@ -7,7 +7,7 @@ const OrderDetails = () => {
 const[customer,setCustomer]=useState([])
 const navigate=useNavigate()
   useEffect(() => {
-    document.title = "Wish-it || Order Details"
+    document.title = "HomeEase || Order Details"
     Connection.getOrder(id).then((response)=> {
         setorderDetails(response.data.order)
         setCustomer(response.data.customer)

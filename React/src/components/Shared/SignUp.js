@@ -57,7 +57,7 @@ const SignUp = () => {
     // const [password, SetPassword] = useState('')
     // const [username, SetUsername] = useState('')
     useEffect(() => {
-        document.title = "Wish-it || SignUp"
+        document.title = "HomeEase || SignUp"
       })
     const SaveUser = (e) => {
         let name = formik.values.name;

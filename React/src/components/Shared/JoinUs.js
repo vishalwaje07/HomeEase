@@ -62,7 +62,7 @@ const validate = (supData) => {
 const JoinUs = () => {
     const [category, setServices] = useState([]);
     useEffect(() => {
-        document.title = "Wish-it || Supplier-Join Us"
+        document.title = "HomeEase || Supplier-Join Us"
         Connection.getAllServices().then((response) => {
             setServices(response.data)
             console.log(response.data)

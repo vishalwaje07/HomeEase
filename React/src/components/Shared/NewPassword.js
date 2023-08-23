@@ -11,7 +11,7 @@ const NewPassword = () => {
   const { state } = useLocation();
   const token=state.token
   useEffect(() => {
-    document.title = "Wish-it || New Password"
+    document.title = "HomeEase || New Password"
     
 },[])
   const SetNewPass=(e)=>{

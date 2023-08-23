@@ -44,7 +44,7 @@ const navigate=useNavigate()
             <Container>
                 <Row className="align-align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                    <span className="tagline">Welcome To WISH-IT Solutions</span>
+                    <span className="tagline">Welcome To HomeEase Solutions</span>
                     <h1>{``}<span className="wrap">{text}</span></h1>
                     <p>Fantasizing about that beautiful home? Don't stop at just dreaming!
                          Choose from our exclusive services from the best professionals in

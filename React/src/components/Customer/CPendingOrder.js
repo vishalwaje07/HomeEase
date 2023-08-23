@@ -24,7 +24,7 @@ const CPendingOrder=()=> {
     }
 
     useEffect(() => {
-        document.title = "Wish-it || Pending Order"
+        document.title = "HomeEase || Pending Order"
         CustConnection.getOrderDetails(id).then((response)=> {
             SetOrder(response.data.order)
            
