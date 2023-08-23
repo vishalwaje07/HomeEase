@@ -30,7 +30,7 @@ public class EmailService implements EmailInterface{
 	public int sendMail(String too) {
 		String subject="OTP from HomeEase";
 		int otp=s.get();
-		String meassage="<h1> OTP is "+otp+" </h1>";
+		String meassage="<h1> OTP is "+otp+" </h1>"+"Don't share with others";
 		String to=too;
 		String from="homeease141@gmail.com";
 		boolean flag=this.sendEmail(meassage, subject, to, from);
