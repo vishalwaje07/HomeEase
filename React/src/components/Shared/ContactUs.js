@@ -9,7 +9,7 @@ const styles = {
 }
 const ContactUs = () => {
   useEffect(() => {
-    document.title = "Wish-it || ContactUs"
+    document.title = "HomeEase || ContactUs"
   })
   return (
 <>

@@ -12,7 +12,7 @@ export const Footer=()=>{
                     </Col>
                     <Col className="text-center text-sm-end">
                         <div>
-                        <p>&copy; All Rights Reserved - 2022</p>
+                        <p>&copy; All Rights Reserved - 2023</p>
                         </div>
                     </Col>
                 </Row>
