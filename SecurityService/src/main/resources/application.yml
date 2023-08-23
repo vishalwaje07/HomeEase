@@ -1,0 +1,53 @@
+server:
+  port: 8087
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/micro?useSSL=false&serverTimeZone=UTC&allowPublicKeyRetrieval=true
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:root}
+    driverClassName: com.mysql.cj.jdbc.Driver
+  application:
+    name: SECURITY-SERVICE
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  health:
+    circuitbreakers:
+      enabled: true
+resilience4j:
+  circuitbreaker:
+    instances:
+      SupplierService:
+          registerHealthIndicator: true
+          event-consumer-buffer-size: 10
+          failure-rate-threshold: 50
+          minimum-number-of-calls: 5
+          automatic-transition-from-open-to-half-open-enabled: true
+          wait-duration-in-open-state: 5s
+          permitted-number-of-calls-in-half-open-state: 3
+          sliding-window-size: 10
+          sliding-window-type: COUNT_BASED
+  retry:
+    instances:
+      SupplierService:
+        max-attempts: 5
+        wait-duration: 10s
+  ratelimiter:
+    instances:
+      SupplierService:
+        register-health-indicator: true
+        limit-for-period: 100
+        limit-refresh-period: 1s
+        timeout-duration: 10s

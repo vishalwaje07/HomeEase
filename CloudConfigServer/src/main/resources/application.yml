@@ -1,0 +1,19 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/prashantda/ConfigServerMicroService
+          clone-on-start: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
